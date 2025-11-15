@@ -3,38 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abed Khorami - Resume</title>
+    <title>Mohammad Abed Khorami - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <img src="./img/Abed Khorami BW.jpg" alt="Abed Khorami" class="profile-img">
-        <h1>Abed Khorami</h1>
-        <p>Art Director | UI/UX Designer | Product Designer</p>
-        <button class="button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <button class="button"><a href="https://drive.google.com/file/d/1bxwtUBAaJiKh-D0017jUmlqXGgvqaIzI/view?usp=drive_link" download style="color:white; text-decoration:none;">Download Resume</a></button>
-        
+
+        <!-- Profile Section -->
+        <img src="./img/Abed Khorami BW.jpg" alt="Mohammad Abed Khorami" class="profile-img">
+
+        <h1>Mohammad Abed Khorami</h1>
+        <p class="subtitle">Aspiring Software Engineer · C# / .NET Developer · UI/UX Designer</p>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <button class="button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+            <a href="https://drive.google.com/file/d/1bxwtUBAaJiKh-D0017jUmlqXGgvqaIzI/view?usp=drive_link" 
+               class="button" 
+               target="_blank">
+               Download Resume
+            </a>
+
+            <a href="https://abedkhorami.ca" class="button" target="_blank">
+                Visit My Website
+            </a>
+        </div>
+
+        <!-- Social Icons -->
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/mohammad-abed-khorami-b8845762/"><img src="./img/InBug-Black.png" alt="LinkedIn"></a>
-            <a href="https://x.com/abed_khorami"><img src="./img/logo-black.png" alt="Twitter"></a>
-            <a href="https://abed-khorami.myportfolio.com"><img src="./img/adobe-portfolio-icon.png" alt="AdobePortfolio"></a>
+            <a href="https://www.linkedin.com/in/mohammad-abed-khorami-b8845762/" target="_blank">
+                <img src="./img/InBug-Black.png" alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com/abedkhorami" target="_blank">
+                <img src="./img/github-mark.png" alt="GitHub">
+            </a>
+
+            <a href="https://x.com/abed_khorami" target="_blank">
+                <img src="./img/logo-black.png" alt="Twitter">
+            </a>
+
+            <a href="https://abed-khorami.myportfolio.com" target="_blank">
+                <img src="./img/adobe-portfolio-icon.png" alt="Adobe Portfolio">
+            </a>
         </div>
-        
-        <div class="about section">
+
+        <!-- About Section -->
+        <div class="section">
             <h2>About Me</h2>
-            <p>I am a creative and passionate UI/UX designer with extensive experience in product design.</p>
+            <p>
+                I am an aspiring software engineer with hands-on experience in C#, ASP.NET MVC,
+                and Entity Framework. With a strong background in UI/UX design and more than
+                15 years of experience in creative media, I bring a user-centered approach to
+                software development.
+            </p>
+            <p>
+                I am currently studying programming and building full-stack web applications,
+                focusing on clean architecture, database-driven development, and modern UI/UX principles.
+            </p>
         </div>
-        
-        <div class="contact section">
+
+        <!-- Contact Section -->
+        <div class="section">
             <h2>Contact Me</h2>
             <form action="https://formsubmit.co/abed.khorami@gmail.com" method="POST" class="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
+
                 <button type="submit" class="button">Send Message</button>
             </form>
         </div>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
